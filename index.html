@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>RPAT Enterprises, LLC</title>
+<meta name="description" content="RPAT Enterprises, LLC is an independent software company in Allen, Texas, building and operating consumer mobile applications.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#16233B;
+    --slate:#5B6B84;
+    --paper:#FBFBF9;
+    --line:#E3E1DA;
+    --brass:#A8853C;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{font-size:16px}
+  body{
+    background:var(--paper);
+    color:var(--ink);
+    font-family:"Libre Franklin",-apple-system,"Segoe UI",Helvetica,Arial,sans-serif;
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:640px;margin:0 auto;padding:0 24px}
+  a{color:var(--ink);text-decoration-color:var(--brass);text-underline-offset:3px}
+  a:hover{color:var(--brass)}
+  a:focus-visible{outline:2px solid var(--brass);outline-offset:3px;border-radius:2px}
+
+  header{padding:56px 0 0}
+  .wordmark{
+    font-weight:700;
+    font-size:.85rem;
+    letter-spacing:.18em;
+    text-transform:uppercase;
+  }
+  .wordmark::after{
+    content:"";
+    display:block;
+    width:44px;
+    height:3px;
+    background:var(--brass);
+    margin-top:12px;
+  }
+
+  main{padding:72px 0 0}
+  h1{
+    font-weight:900;
+    font-size:clamp(1.9rem,6vw,2.6rem);
+    line-height:1.15;
+    letter-spacing:-.01em;
+    max-width:16ch;
+  }
+  .about{
+    margin-top:28px;
+    color:var(--slate);
+    font-size:1.05rem;
+    max-width:52ch;
+  }
+
+  .caps{margin-top:56px;border-top:1px solid var(--line)}
+  .cap{
+    display:grid;
+    grid-template-columns:132px 1fr;
+    gap:16px;
+    padding:18px 0;
+    border-bottom:1px solid var(--line);
+  }
+  .cap dt{
+    font-weight:700;
+    font-size:.8rem;
+    letter-spacing:.14em;
+    text-transform:uppercase;
+    padding-top:2px;
+  }
+  .cap dd{color:var(--slate)}
+
+  .record{
+    margin-top:64px;
+    border:1px solid var(--ink);
+    padding:28px;
+  }
+  .record h2{
+    font-size:.8rem;
+    font-weight:700;
+    letter-spacing:.18em;
+    text-transform:uppercase;
+    color:var(--brass);
+    margin-bottom:20px;
+  }
+  .record dl{display:grid;grid-template-columns:132px 1fr;row-gap:12px;column-gap:16px}
+  .record dt{
+    font-size:.8rem;
+    font-weight:500;
+    letter-spacing:.1em;
+    text-transform:uppercase;
+    color:var(--slate);
+    padding-top:3px;
+  }
+  .record dd{font-weight:500}
+  /* Optional: add an "Established" row in the Company Record with the LLC formation year */
+
+  footer{padding:72px 0 48px}
+  footer p{color:var(--slate);font-size:.85rem}
+
+  @media (max-width:480px){
+    .cap,.record dl{grid-template-columns:1fr;gap:4px}
+    .cap{padding:16px 0}
+    .record{padding:22px}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <div class="wordmark">RPAT Enterprises, LLC</div>
+  </header>
+
+  <main>
+    <h1>We build and operate consumer mobile apps.</h1>
+    <p class="about">RPAT Enterprises is an independent software company based in Allen, Texas. We develop a portfolio of consumer applications for iOS, with products spanning family tools, health, and youth sports. Every product is designed, engineered, and supported in&#8209;house.</p>
+
+    <dl class="caps">
+      <div class="cap">
+        <dt>Design</dt>
+        <dd>Product strategy and user experience for consumer software.</dd>
+      </div>
+      <div class="cap">
+        <dt>Engineering</dt>
+        <dd>Native and cross-platform mobile development.</dd>
+      </div>
+      <div class="cap">
+        <dt>Operations</dt>
+        <dd>Publishing, customer support, and product lifecycle management.</dd>
+      </div>
+    </dl>
+
+    <section class="record" aria-label="Company record">
+      <h2>Company Record</h2>
+      <dl>
+        <dt>Entity</dt>
+        <dd>RPAT Enterprises, LLC, registered in Texas, USA</dd>
+        <dt>Location</dt>
+        <dd>Allen, Texas, United States</dd>
+        <dt>Contact</dt>
+        <dd><a href="mailto:contact@rpatenterprises.com">contact@rpatenterprises.com</a></dd>
+      </dl>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 RPAT Enterprises, LLC. All rights reserved.</p>
+  </footer>
+
+</div>
+</body>
+</html>
